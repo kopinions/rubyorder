@@ -1,0 +1,16 @@
+<ul class="products">
+  <% @products.each do |product|%>
+
+    <li class="product-item">
+        <section>
+          <div class="product-info">
+            <h4 class="product-name"><%=product.name%></h4>
+            <strong class="product-price"><%=product.price.price%></strong>
+            <span class="product-location"><%=product.location%></span>
+          </div>
+          <%= link_to 'Back', @products%>
+          <a href="#"><img src="imgs/headphone.jpg" alt=""/></a>
+        </section>
+    </li>
+  <% end%>
+</ul>
